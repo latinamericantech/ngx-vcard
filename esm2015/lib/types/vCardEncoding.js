@@ -1,0 +1,6 @@
+export var VCardEncoding;
+(function (VCardEncoding) {
+    VCardEncoding["none"] = "";
+    VCardEncoding["utf8"] = ";CHARSET=utf-8";
+})(VCardEncoding || (VCardEncoding = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidkNhcmRFbmNvZGluZy5qcyIsInNvdXJjZVJvb3QiOiJDOi9Vc2Vycy9TdGVwaGFuaWUvRG9jdW1lbnRzL25neC12Y2FyZC9wcm9qZWN0cy9uZ3gtdmNhcmQvc3JjLyIsInNvdXJjZXMiOlsibGliL3R5cGVzL3ZDYXJkRW5jb2RpbmcudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsTUFBTSxDQUFOLElBQVksYUFHWDtBQUhELFdBQVksYUFBYTtJQUN2QiwwQkFBUyxDQUFBO0lBQ1Qsd0NBQXVCLENBQUE7QUFDekIsQ0FBQyxFQUhXLGFBQWEsS0FBYixhQUFhLFFBR3hCIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGVudW0gVkNhcmRFbmNvZGluZyB7XHJcbiAgbm9uZSA9ICcnLFxyXG4gIHV0ZjggPSAnO0NIQVJTRVQ9dXRmLTgnXHJcbn1cclxuIl19
