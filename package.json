@@ -1,81 +1,38 @@
 {
-  "name": "ngx-vcard-app",
-  "version": "0.0.0-development",
+  "name": "ngx-vcard",
+  "version": "0.0.1",
+  "description": "Generate an RFC compliant vCard and download it.",
+  "keywords": [
+    "angular",
+    "vCard"
+  ],
+  "homepage": "https://github.com/DanielHabenicht/ngx-vcard",
+  "bugs": {
+    "url": "https://github.com/DanielHabenicht/ngx-vcard/issues"
+  },
+  "author": {
+    "name": "Daniel Habenicht",
+    "email": "daniel-habenicht@aquiver.de",
+    "url": "https://www.aquiver.de"
+  },
   "license": "MIT",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build:app": "ng build",
-    "build:lib": "ng build --prod ngx-vcard && npm run copy-files",
-    "test:lib:dev-debug": "ng test ngx-vcard --watch --browsers=ChromeDebugging",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "webdriver-manager update --versions.chrome=85.0.4183.38 --gecko false --standalone false && ng e2e --webdriverUpdate false",
-    "commit": "git-cz",
-    "copy-license": "copyfiles ./LICENSE ./dist/ngx-vcard",
-    "copy-readme": "copyfiles ./README.md ./dist/ngx-vcard",
-    "copy-files": "npm run copy-license && npm run copy-readme",
-    "travis-deploy-once": "travis-deploy-once",
-    "semantic-release": "semantic-release",
-    "test-docker": "npm run docker-build && docker run --rm build_vcard npm run test",
-    "docker-build": "docker build -t build_vcard ."
-  },
-  "private": false,
-  "dependencies": {
-    "@angular/animations": "10.2.4",
-    "@angular/common": "10.2.4",
-    "@angular/compiler": "10.2.4",
-    "@angular/core": "10.2.4",
-    "@angular/forms": "10.2.4",
-    "@angular/platform-browser": "10.2.4",
-    "@angular/platform-browser-dynamic": "10.2.4",
-    "@angular/router": "10.2.4",
-    "ngx-vcard": "x",
-    "rxjs": "6.6.3",
-    "tslib": "2.0.3",
-    "zone.js": "0.11.3"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "0.1100.5",
-    "@angular-devkit/build-ng-packagr": "0.1002.0",
-    "@angular/cli": "10.2.1",
-    "@angular/compiler-cli": "10.2.4",
-    "@angular/language-service": "10.2.4",
-    "@types/jasmine": "3.6.2",
-    "@types/jasminewd2": "2.0.8",
-    "@types/node": "14.14.16",
-    "codelyzer": "6.0.1",
-    "commitizen": "4.2.2",
-    "copyfiles": "2.4.1",
-    "cz-conventional-changelog": "3.3.0",
-    "jasmine-core": "3.6.0",
-    "jasmine-reporters": "2.3.2",
-    "jasmine-spec-reporter": "5.0.2",
-    "karma": "5.2.3",
-    "karma-chrome-launcher": "3.1.0",
-    "karma-coverage-istanbul-reporter": "3.0.3",
-    "karma-jasmine": "4.0.1",
-    "karma-jasmine-html-reporter": "1.5.4",
-    "karma-junit-reporter": "2.0.1",
-    "ng-packagr": "10.1.2",
-    "protractor": "7.0.0",
-    "puppeteer": "5.3.1",
-    "semantic-release": "17.3.1",
-    "ts-node": "9.1.1",
-    "tslint": "6.1.3",
-    "typescript": "4.0.5",
-    "webdriver-manager": "12.1.7"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DanielHabenicht/ngx-vcard.git"
+    "url": "https://github.com/DanielHabenicht/ngx-vcard"
   },
-  "release": {
-    "pkgRoot": "dist/ngx-vcard"
-  }
+  "dependencies": {
+    "tslib": "2.0.3"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=5.x <11.0.0",
+    "@angular/core": ">=5.x <11.0.0"
+  },
+  "main": "bundles/ngx-vcard.umd.js",
+  "module": "fesm2015/ngx-vcard.js",
+  "es2015": "fesm2015/ngx-vcard.js",
+  "esm2015": "esm2015/ngx-vcard.js",
+  "fesm2015": "fesm2015/ngx-vcard.js",
+  "typings": "ngx-vcard.d.ts",
+  "metadata": "ngx-vcard.metadata.json",
+  "sideEffects": false
 }
